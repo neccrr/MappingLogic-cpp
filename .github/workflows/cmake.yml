@@ -49,5 +49,5 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: MappingLogic
-        path: build/builds/MappingLogic.exe
+        path: build\builds\${{env.BUILD_TYPE}}\MappingLogic.exe
 
