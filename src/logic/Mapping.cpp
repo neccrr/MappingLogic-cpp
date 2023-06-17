@@ -223,7 +223,7 @@ void Mapping::processMapping() {
     methodMapping(selectedFile, true);
 
     auto endTime = chrono::high_resolution_clock::now();
-    auto elapsedTime = chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime).count();
+    auto elapsedTime = chrono::duration_cast<chrono::milliseconds>(endTime - startTime).count();
 
     cout << "Elapsed time: " << elapsedTime / 1000.0 << " seconds (" << elapsedTime << " ms)" << endl;
 }
